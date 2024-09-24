@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0D47A1">
+<title>أستير 10</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+<script type='text/javascript' src='js/popcorn-complete.min.js'></script>
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+<script type='text/javascript' src='js/app-builder-audio.js'></script>
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/app-builder-video.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+
+<link rel="manifest" href="./manifest.webmanifest" />
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+
+<link rel="stylesheet" type="text/css" href="css/sab-stylesheet.css" />
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 10 }];
+var hasIntro = false;
+var baseRef  = "ONAV-17-EST-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="LTR" lang="arb">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='ONAV-16-NEH-001.html' title='Previous Book'>&nbsp;&lt;&lt;&nbsp;</a></span>
+  <span class="button"><a href='ONAV-17-EST-009.html' title='Previous Chapter'>&nbsp;&nbsp;&lt;&nbsp;&nbsp;</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">&nbsp;&nbsp;أستير&nbsp;&nbsp;</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">&nbsp;&nbsp;10&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='ONAV-18-JOB-001.html' title='Next Chapter'>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</a></span>
+  <span class="button"><a href='ONAV-18-JOB-001.html' title='Next Book'>&nbsp;&gt;&gt;&nbsp;</a></span>
+</div>
+</div>
+
+<div id="content">
+
+
+<div class="s"><div id="s1">عظمة مردخاي</div></div><a id="v1"></a>
+<div class="m">
+<div class="c-drop">١٠</div> وَفَرَضَ الْمَلِكُ أَحَشْوِيرُوشُ جِزْيَةً عَلَى الأَرْضِ وَجُزُرِ الْبَحْرِ،<span id="bookmarks1"></span> <a id="v2"></a><span class="v">٢</span><span class="vsp">&nbsp;</span>أَمَّا مُنْجَزَاتُهُ وَمَآثِرُهُ وَمَا أَغْدَقَ عَلَى مُرْدَخَايَ مِنْ تَكْرِيمٍ حَتَّى ذَاعَ صِيتُهُ أَلَيْسَتْ هِيَ مُدَوَّنَةً فِي كِتَابِ تَارِيخِ أَخْبَارِ أَيَّامِ مُلُوكِ مَادِي وَفَارِسَ؟<span id="bookmarks2"></span> <a id="v3"></a><span class="v">٣</span><span class="vsp">&nbsp;</span>فَقَدِ احْتَلَّ مُرْدَخَايُ الْيَهُودِيُّ الْمَرْتَبَةَ الثَّانِيَةَ بَعْدَ الْمَلِكِ أَحَشْوِيرُوشَ، وَتَمَتَّعَ بِمَكَانَةٍ مَرْمُوقَةٍ بَيْنَ الْيَهُودِ، وَكَانَ يَحْظَى بِرِضَى أَغْلَبِيَّةِ أَبْنَاءِ قَوْمِهِ، فَهُوَ لَمْ يَدَّخِرْ جَهْداً مِنْ أَجْلِ خَيْرِ شَعْبِهِ وَالدِّفَاعِ عَنْ مَصَالِحِ أُمَّتِهِ.<span id="bookmarks3"></span></div>
+</div>
+
+<div id="toolbar-bottom">
+<div class="audio-player">
+  <audio id="audio" controls>
+    <source id="audio1" src="audio/EST_010.mp3" />
+  </audio>
+</div>
+</div>
+
+<script type='text/javascript' src='./pwa-main.js'></script>
+<script>
+var coll = document.getElementsByClassName("collapsible-button");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+}
+</script>
+</body>
+</html>
